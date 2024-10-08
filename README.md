@@ -1,6 +1,6 @@
-# flexbox-froggy-notebook
+# cssdiner-notebook
 
-List of [...](...)
+List of [CSS Diner levels](https://flukeout.github.io)
 
 **Note:** solution could be found [here](SOLUTIONS.md)
 
