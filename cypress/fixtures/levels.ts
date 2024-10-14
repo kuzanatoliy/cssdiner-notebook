@@ -21,4 +21,5 @@ export const levels = [
   ['apple:first-of-type'],
   [':nth-of-type(even)'],
   [':nth-of-type(2n + 3)'],
+  ['apple:only-of-type'],
 ];
