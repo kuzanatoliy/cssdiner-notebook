@@ -18,4 +18,5 @@ export const levels = [
   ['#fancy :last-child, pickle'],
   [':nth-child(3)'],
   ['bento:nth-last-child(2)'],
+  ['apple:first-of-type'],
 ];
