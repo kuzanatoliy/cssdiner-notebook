@@ -7,4 +7,5 @@ export const levels = [
   ['apple.small'],
   ['orange.small'],
   ['bento orange.small'],
+  ['plate, bento'],
 ];
