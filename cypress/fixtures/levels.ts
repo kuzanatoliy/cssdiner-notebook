@@ -9,4 +9,5 @@ export const levels = [
   ['bento orange.small'],
   ['plate, bento'],
   ['*'],
+  ['orange, pickle, apple:not(.small)'],
 ];
