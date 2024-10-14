@@ -16,4 +16,5 @@ export const levels = [
   ['orange:first-child'],
   ['plate :only-child'],
   ['#fancy :last-child, pickle'],
+  [':nth-child(3)'],
 ];
