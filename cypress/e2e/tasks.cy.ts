@@ -46,7 +46,7 @@ describe('CSS Diner', () => {
     testLevel(5);
   });
 
-  it.skip('Should validate seventh task', () => {
+  it('Should validate seventh task', () => {
     testLevel(6);
   });
 
