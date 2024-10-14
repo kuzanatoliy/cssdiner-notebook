@@ -13,4 +13,5 @@ export const levels = [
   ['plate + apple'],
   ['bento ~ pickle'],
   ['plate > apple'],
+  ['orange:first-child'],
 ];
