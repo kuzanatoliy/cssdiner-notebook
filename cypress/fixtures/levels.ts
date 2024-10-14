@@ -17,7 +17,7 @@ export const levels = [
   ['plate :only-child'],
   ['#fancy :last-child, pickle'],
   [':nth-child(3)'],
-  ['bento:nth-last-child(2)'],
+  ['bento:nth-last-child(3)'],
   ['apple:first-of-type'],
   [':nth-of-type(even)'],
   [':nth-of-type(2n + 3)'],

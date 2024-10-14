@@ -21,5 +21,6 @@ module.exports = {
   plugins: ['@typescript-eslint', 'prettier', 'cypress'],
   rules: {
     'prettier/prettier': [2, require('./.prettierrc.js')],
+    'cypress/no-unnecessary-waiting': 0,
   },
 };

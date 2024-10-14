@@ -13,8 +13,10 @@ describe('CSS Diner', () => {
       .contains(levelNumber + 1)
       .click();
     cy.get('.level-header').should('not.have.class', 'completed');
-    cy.get('.input-strobe').type(levels[levelNumber].join('\n'));
-    cy.get('.enter-button').click();
+    cy.get('input').type(levels[levelNumber].join('\n'));
+    cy.wait(1000);
+    cy.get('input').type('{enter}');
+    cy.wait(1000);
     cy.get('.level-menu-toggle-wrapper').click();
     cy.get(`.level-number`)
       .contains(levelNumber + 1)
