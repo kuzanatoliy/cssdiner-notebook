@@ -1,1 +1,1 @@
-export const levels = [['plate']];
+export const levels = [['plate'], ['bento']];
