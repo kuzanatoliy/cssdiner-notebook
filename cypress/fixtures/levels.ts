@@ -4,4 +4,5 @@ export const levels = [
   ['#fancy'],
   ['plate apple'],
   ['plate#fancy pickle'],
+  ['apple.small'],
 ];
