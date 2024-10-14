@@ -1,20 +1,28 @@
 import { levels } from '../fixtures/levels';
 
-describe('Flexbox Froggy', () => {
-  it.skip('Should open page', () => {
-    cy.visit('https://flexboxfroggy.com');
-    cy.get('.title').should('contain', 'Flexbox Froggy');
+describe('CSS Diner', () => {
+  it('Should open page', () => {
+    cy.visit('https://flukeout.github.io');
+    cy.get('header').should('contain', 'CSS Diner');
   });
 
   const testLevel = (levelNumber) => {
-    cy.visit('https://flexboxfroggy.com');
-    cy.get('#level-indicator').click();
-    cy.get(`.level-marker[data-level="${levelNumber}"]`).click();
-    cy.get('#editor textarea').type(levels[levelNumber].join('\n'));
-    cy.get('#next').should('not.have.class', 'disabled');
+    cy.visit('https://flukeout.github.io');
+    cy.get('.level-menu-toggle-wrapper').click();
+    cy.get(`.level-number`)
+      .contains(levelNumber + 1)
+      .click();
+    cy.get('.level-header').should('not.have.class', 'completed');
+    cy.get('.input-strobe').type(levels[levelNumber].join('\n'));
+    cy.get('.enter-button').click();
+    cy.get('.level-menu-toggle-wrapper').click();
+    cy.get(`.level-number`)
+      .contains(levelNumber + 1)
+      .click();
+    cy.get('.level-header').should('have.class', 'completed');
   };
 
-  it.skip('Should validate first task', () => {
+  it('Should validate first task', () => {
     testLevel(0);
   });
 
