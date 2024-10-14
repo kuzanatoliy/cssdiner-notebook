@@ -20,4 +20,5 @@ export const levels = [
   ['bento:nth-last-child(2)'],
   ['apple:first-of-type'],
   [':nth-of-type(even)'],
+  [':nth-of-type(2n + 3)'],
 ];
