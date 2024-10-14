@@ -1,1 +1,1 @@
-export const levels = [['plate'], ['bento']];
+export const levels = [['plate'], ['bento'], ['#fancy']];
