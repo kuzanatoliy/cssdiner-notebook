@@ -6,4 +6,5 @@ export const levels = [
   ['plate#fancy pickle'],
   ['apple.small'],
   ['orange.small'],
+  ['bento orange.small'],
 ];
