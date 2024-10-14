@@ -14,4 +14,5 @@ export const levels = [
   ['bento ~ pickle'],
   ['plate > apple'],
   ['orange:first-child'],
+  ['plate :only-child'],
 ];
