@@ -11,4 +11,5 @@ export const levels = [
   ['*'],
   ['orange, pickle, apple:not(.small)'],
   ['plate + apple'],
+  ['bento ~ pickle'],
 ];
