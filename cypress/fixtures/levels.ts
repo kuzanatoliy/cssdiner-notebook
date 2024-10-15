@@ -30,4 +30,5 @@ export const levels = [
   ['[for="Vitaly"]'],
   ['[for^="Sa"]'],
   ['[for$="ato"]'],
+  ['[for*="obb"]'],
 ];
