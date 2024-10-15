@@ -127,4 +127,8 @@ describe('CSS Diner', () => {
   it('Should validate twenty sixth task', () => {
     testLevel(25);
   });
+
+  it('Should validate twenty seventh task', () => {
+    testLevel(26);
+  });
 });
