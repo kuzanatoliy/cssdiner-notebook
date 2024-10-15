@@ -28,4 +28,5 @@ export const levels = [
   ['[for]'],
   ['[for="Sarah"], [for="Luke"]'],
   ['[for="Vitaly"]'],
+  ['[for^="Sa"]'],
 ];
