@@ -23,4 +23,5 @@ export const levels = [
   [':nth-of-type(2n + 3)'],
   ['apple:only-of-type'],
   [':not(pickle):last-of-type'],
+  ['bento:empty'],
 ];
