@@ -26,4 +26,5 @@ export const levels = [
   ['bento:empty'],
   ['apple:not(.small)'],
   ['[for]'],
+  ['[for="Sarah"], [for="Luke"]'],
 ];
