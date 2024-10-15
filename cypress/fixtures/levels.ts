@@ -27,4 +27,5 @@ export const levels = [
   ['apple:not(.small)'],
   ['[for]'],
   ['[for="Sarah"], [for="Luke"]'],
+  ['[for="Vitaly"]'],
 ];
