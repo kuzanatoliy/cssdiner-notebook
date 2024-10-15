@@ -1,112 +1,154 @@
 import { levels } from '../fixtures/levels';
 
-describe('Flexbox Froggy', () => {
-  it.skip('Should open page', () => {
-    cy.visit('https://flexboxfroggy.com');
-    cy.get('.title').should('contain', 'Flexbox Froggy');
+describe('CSS Diner', () => {
+  it('Should open page', () => {
+    cy.visit('https://flukeout.github.io');
+    cy.get('header').should('contain', 'CSS Diner');
   });
 
   const testLevel = (levelNumber) => {
-    cy.visit('https://flexboxfroggy.com');
-    cy.get('#level-indicator').click();
-    cy.get(`.level-marker[data-level="${levelNumber}"]`).click();
-    cy.get('#editor textarea').type(levels[levelNumber].join('\n'));
-    cy.get('#next').should('not.have.class', 'disabled');
+    cy.visit('https://flukeout.github.io');
+    cy.get('.level-menu-toggle-wrapper').click();
+    cy.get(`.level-number`)
+      .contains(levelNumber + 1)
+      .click();
+    cy.get('.level-header').should('not.have.class', 'completed');
+    cy.get('input').type(levels[levelNumber].join('\n'));
+    cy.wait(1000);
+    cy.get('input').type('{enter}');
+    cy.wait(1000);
+    cy.get('.level-menu-toggle-wrapper').click();
+    cy.get(`.level-number`)
+      .contains(levelNumber + 1)
+      .click();
+    cy.get('.level-header').should('have.class', 'completed');
   };
 
-  it.skip('Should validate first task', () => {
+  it('Should validate first task', () => {
     testLevel(0);
   });
 
-  it.skip('Should validate second task', () => {
+  it('Should validate second task', () => {
     testLevel(1);
   });
 
-  it.skip('Should validate third task', () => {
+  it('Should validate third task', () => {
     testLevel(2);
   });
 
-  it.skip('Should validate forth task', () => {
+  it('Should validate forth task', () => {
     testLevel(3);
   });
 
-  it.skip('Should validate fifth task', () => {
+  it('Should validate fifth task', () => {
     testLevel(4);
   });
 
-  it.skip('Should validate sixth task', () => {
+  it('Should validate sixth task', () => {
     testLevel(5);
   });
 
-  it.skip('Should validate seventh task', () => {
+  it('Should validate seventh task', () => {
     testLevel(6);
   });
 
-  it.skip('Should validate eighth task', () => {
+  it('Should validate eighth task', () => {
     testLevel(7);
   });
 
-  it.skip('Should validate nineth task', () => {
+  it('Should validate nineth task', () => {
     testLevel(8);
   });
 
-  it.skip('Should validate tenth task', () => {
+  it('Should validate tenth task', () => {
     testLevel(9);
   });
 
-  it.skip('Should validate eleventh task', () => {
+  it('Should validate eleventh task', () => {
     testLevel(10);
   });
 
-  it.skip('Should validate twelfth task', () => {
+  it('Should validate twelfth task', () => {
     testLevel(11);
   });
 
-  it.skip('Should validate thirteenth task', () => {
+  it('Should validate thirteenth task', () => {
     testLevel(12);
   });
 
-  it.skip('Should validate forteenth task', () => {
+  it('Should validate fourteenth task', () => {
     testLevel(13);
   });
 
-  it.skip('Should validate fifteenth task', () => {
+  it('Should validate fifteenth task', () => {
     testLevel(14);
   });
 
-  it.skip('Should validate sixteenth task', () => {
+  it('Should validate sixteenth task', () => {
     testLevel(15);
   });
 
-  it.skip('Should validate seventeenth task', () => {
+  it('Should validate seventeenth task', () => {
     testLevel(16);
   });
 
-  it.skip('Should validate eighteenth task', () => {
+  it('Should validate eighteenth task', () => {
     testLevel(17);
   });
 
-  it.skip('Should validate nineteenth task', () => {
+  it('Should validate nineteenth task', () => {
     testLevel(18);
   });
 
-  it.skip('Should validate twentyth task', () => {
+  it('Should validate twentyth task', () => {
     testLevel(19);
   });
 
-  it.skip('Should validate twenty first task', () => {
+  it('Should validate twenty first task', () => {
     testLevel(20);
   });
 
-  it.skip('Should validate twenty second task', () => {
+  it('Should validate twenty second task', () => {
     testLevel(21);
   });
 
-  it.skip('Should validate twenty third task', () => {
+  it('Should validate twenty third task', () => {
     testLevel(22);
   });
 
-  it.skip('Should validate twenty fourth task', () => {
+  it('Should validate twenty fourth task', () => {
     testLevel(23);
+  });
+
+  it('Should validate twenty fifth task', () => {
+    testLevel(24);
+  });
+
+  it('Should validate twenty sixth task', () => {
+    testLevel(25);
+  });
+
+  it('Should validate twenty seventh task', () => {
+    testLevel(26);
+  });
+
+  it('Should validate twenty eighth task', () => {
+    testLevel(27);
+  });
+
+  it('Should validate twenty nineth task', () => {
+    testLevel(28);
+  });
+
+  it('Should validate thirtieth task', () => {
+    testLevel(29);
+  });
+
+  it('Should validate thirty first task', () => {
+    testLevel(30);
+  });
+
+  it('Should validate thirty second task', () => {
+    testLevel(31);
   });
 });
