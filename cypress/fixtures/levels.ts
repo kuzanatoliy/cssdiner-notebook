@@ -24,4 +24,5 @@ export const levels = [
   ['apple:only-of-type'],
   [':not(pickle):last-of-type'],
   ['bento:empty'],
+  ['apple:not(.small)'],
 ];
