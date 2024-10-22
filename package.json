@@ -1,6 +1,6 @@
 {
   "name": "cssdiner-notebook",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "Solution list for css diner play",
   "main": "index.js",
   "scripts": {
